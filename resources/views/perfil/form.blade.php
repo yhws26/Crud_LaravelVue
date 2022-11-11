@@ -27,9 +27,7 @@
     @if(isset($perfil->fotoPerfil))
     <img class="img-thumbnail img-fluid" src="{{ asset('storage').'/'.$perfil->fotoPerfil }}" width="100" alt="">
     @endif
-    <br>
     <input class="form-control" type="file" name="fotoPerfil" id="fotoPerfil">
-    <br>
 </div>
 
 <div class="form-group">
@@ -37,9 +35,7 @@
     @if(isset($perfil->fotoLicencia))
     <img class="img-thumbnail img-fluid" src="{{ asset('storage').'/'.$perfil->fotoLicencia }}" width="100" alt="">
     @endif
-    <br>
     <input class="form-control" type="file" name="fotoLicencia" id="fotoLicencia">
-    <br>
 </div>
 
 <div class="form-group">
@@ -60,7 +56,6 @@
 <div class="form-group">
     <label for="fechaNacimiento">Fecha de Nacimiento</label>
     <input class="form-control" type="date" name="fechaNacimiento" value="{{isset($perfil->fechaNacimiento)?$perfil->fechaNacimiento:old('fechaNacimiento')}}" id="fechaNacimiento"> 
-    <br>
 </div>
 
 <div class="form-group">

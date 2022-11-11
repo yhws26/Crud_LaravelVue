@@ -3,7 +3,6 @@
 @section('title', 'Alquiler de Vehiculos')
 
 @section('content')
-
 <div class="container">
 
 {{-- CRUD | Crear --}}

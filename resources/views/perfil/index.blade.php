@@ -28,14 +28,14 @@
             <thead class="thread-light">
                 <tr>
                     <th>#</th>
-                    <th>Foto de Perfil</th>
-                    <th>Foto de Licencia</th>
+                    {{-- <th>Foto de Perfil</th>
+                    <th>Foto de Licencia</th> --}}
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Cedula</th>
-                    <th>Fecha de Nacimiento</th>
+                    {{-- <th>Fecha de Nacimiento</th>
                     <th>Numero de Licencia</th>
-                    <th>Fecha de Vencimiento</th>
+                    <th>Fecha de Vencimiento</th> --}}
                     <th>Acciones</th>
     
                 </tr>
@@ -45,22 +45,22 @@
                 <tr>
                     <td> {{ $usuario->id }} </td>
     
-                    <td> 
+                    {{-- <td> 
                     <img class="img-thumbnail img-fluid" src="{{ asset('storage').'/'.$usuario->fotoPerfil }}" width="100" alt="">
                     </td>
     
                     <td>
                     <img class="img-thumbnail img-fluid" src="{{ asset('storage').'/'.$usuario->fotoLicencia }}" width="100" alt="">
-                    </td>
+                    </td> --}}
     
                     <td> {{ $usuario->Nombre }} </td>
                     <td> {{ $usuario->Apellido }} </td>
                     <td> {{ $usuario->Cedula }} </td>
-                    <td> {{ $usuario->fechaNacimiento }} </td>
+                    {{-- <td> {{ $usuario->fechaNacimiento }} </td>
                     <td> {{ $usuario->numeroLicencia }} </td>
-                    <td> {{ $usuario->fechaVencimiento }} </td>
-                    <td> 
+                    <td> {{ $usuario->fechaVencimiento }} </td> --}}
                     
+                    <td>
                     {{-- CRUD | Editar --}}
                     <a href="{{ url('/perfil/'.$usuario->id.'/edit') }}" class="btn btn-warning">
                         Editar
