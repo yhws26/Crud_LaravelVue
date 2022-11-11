@@ -24,10 +24,10 @@ Route::resource('perfil',PerfilController::class)->middleware('auth');
 
 Auth::routes();
 
-Route::get('/home', [PerfilController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
 
-    Route::get('/', [PerfilController::class, 'index'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 

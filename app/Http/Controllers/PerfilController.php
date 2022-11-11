@@ -17,7 +17,7 @@ class PerfilController extends Controller
     public function index()
     {
         //Consultar datos enviados en el formulario
-        $datos['perfil']=Perfil::paginate(8);
+        $datos['perfil']=Perfil::paginate(3);
         return view('perfil.index',$datos);
     }
 
